@@ -14,8 +14,6 @@ jobs:
       - uses: actions/checkout@v3
       - name: Set up Python ${{ matrix.python-version }}
         uses: actions/setup-python@v4
-      - name: action-zip
-        uses: montudor/action-zip@v1.0.0
         with:
           python-version: ${{ matrix.python-version }}
       - name: Install dependencies
